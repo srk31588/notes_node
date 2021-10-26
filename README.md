@@ -1,21 +1,19 @@
 #  Server for Notes App
 
-notes-node app is a node server which will handle  different notes activities library for dealing with word pluralization.
+notes-node app is a node server which will handle  different notes activities.
 
 ## Setup
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-Use git clone to clone the project [git url] ()
+Use git clone to clone the project [git url] (https://github.com/srk31588/notes_node)
 
 ```bash
  git clone https://github.com/srk31588/notes_node
 ```
-Navigate to the folder which created newly
+Navigate to the folder which created newly.
 
 >notes_node.
 
-Check you node and npm versions. Should be same or above versions shown below.
+Check your node and npm versions. Should be same or above than versions shown below.
 ```bash
  $ node -v
   v17.0.1
@@ -24,9 +22,9 @@ Check you node and npm versions. Should be same or above versions shown below.
  $ npm -v
   8.1.0
 ```
-if you are first time to node follow instructions [here](https://www.geeksforgeeks.org/installation-of-node-js-on-windows/?ref=lbp) to install node newly
+if you are first time to node follow instructions [here](https://www.geeksforgeeks.org/installation-of-node-js-on-windows/?ref=lbp) to install node newly on your system.
 
-Once your able of see versions of node and npm in your system.
+Once your able of see versions of node and npm in your system as above proceed following steps.
 
 In `notes_node` folder run below install command to install all packages.
 ```bash
