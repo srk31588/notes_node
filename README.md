@@ -4,7 +4,7 @@ notes-node app is a node server which will handle  different notes activities.
 
 ## Setup
 
-Use git clone to clone the project [git url] (https://github.com/srk31588/notes_node)
+Use git clone to clone the project [git url](https://github.com/srk31588/notes_node)
 
 ```bash
  git clone https://github.com/srk31588/notes_node
