@@ -48,8 +48,6 @@ app.post('/api/notes',(req,res)=>{
       }
       const nots = getNotes(notes.name);
       if(nots){
-        // console.log(notes.content);
-        // console.log(nots);
         db.get('noteses').find({ name: nots.name })
          .assign({content: notes.content})
          .write();
@@ -71,8 +69,7 @@ app.put('/api/notes', (req,res)=>{
 
   const notes = getNotes(req.body.name);
 
-  if(notes.length === 0) return res.status(404).send("Notes with the given name not found.");
-console.log(notes);
+  if(!notes) return res.status(404).send("Notes with the given name not found.");
   db.get('noteses').find({ name: notes.name })
      .assign({content: req.body.content})
      .write();
@@ -103,7 +100,6 @@ app.delete('/api/notes', (req,res)=>{
 
   let nonDeleted = "";
   req.body.forEach(e =>{
-    console.log(e);
     const notesIndex = db.get('noteses').findIndex({name:e.name}).value();
     if(notesIndex===-1)
       nonDeleted = nonDeleted + " , " + e.name;
